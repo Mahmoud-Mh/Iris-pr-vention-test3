@@ -1,8 +1,21 @@
 <?php
 
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\UserController;
+use App\Http\Controllers\API\ArticleController;
 use Illuminate\Support\Facades\Route;
 
-Route::apiResource('users', UserController::class);
-Route::apiResource('articles', ArticleController::class);
+// Public routes
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
+
+// Protected routes
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('logout', [AuthController::class, 'logout']);
+    
+    // User routes
+    Route::apiResource('users', UserController::class);
+    
+    // Article routes
+    Route::apiResource('articles', ArticleController::class);
+});

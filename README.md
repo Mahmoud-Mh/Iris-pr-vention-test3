@@ -1,85 +1,66 @@
-<p align="center"><a href="https://iris-prevention.fr" target="_blank"><img src="public/img.png" width="200" alt="Iris Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-# Test technique Iris Prévention - Laravel
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Ce test technique a pour but d'évaluer vos competences sur php et laravel.
-Votre capacité à respecter les consignes, à structurer votre code et à gérer vos branches et commits sera aussi évaluée.
+## About Laravel
 
-## Sujet 1 : Mini-système de blog
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-### Objectif : Évaluer la capacité à mettre en œuvre un CRUD basique.
-- Créer un modèle Post et un modèle Commentaire.
-- Valider les inputs avec des formrequests.
-- Implémenter une interface :
-  - Pour créer et gérer des articles.
-  - Pour ajouter des commentaires aux articles.
-  - Pour voir les commentaires associés à un article.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-#### Bonus : Permettre aux utilisateurs d’aimer un article.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Sujet 2 : Système d’authentification personnalisé
+## Learning Laravel
 
-### Objectif : Tester les compétences en authentification et gestion des sessions.
-- Créer un système de connexion/inscription (pas via artisan make:auth).
-- Mettre en place :
-- Un système de réinitialisation de mot de passe (par email).
-- Une protection des routes nécessitant une authentification.
-- Obliger les utilisateurs à être connectés pour pouvoir liker et poster des commentaires et des articles.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-#### Bonus : 
-- #### Implémenter une double authentification (par exemple, un code envoyé par email).
-- #### Implémenter un système de rôle, les administrateurs peuvent modérer et modifier les articles des autres utilisateurs.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## Sujet 3 : API REST : Gestion des utilisateurs et des articles
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-### Objectif : Tester la maîtrise des API et des bonnes pratiques REST.
-- Créer une API permettant de gérer des utilisateurs/Articles :
-- Créer un utilisateur/Article.
-- Récupérer la liste des utilisateurs/Articles.
-- Récupérer un utilisateur/article spécifique.
-- Mettre à jour un utilisateur/article.
-- Supprimer un utilisateur/article.
-- Utiliser des Resource pour structurer les réponses.
+## Laravel Sponsors
 
-#### Bonus :
-- #### Ajouter une authentification (par exemple, via Passport ou Sanctum).
-- #### Implémenter une pagination pour l’API (avec les liens next, prev).
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-## Sujet Bonus 1 : Événements et Observateurs
+### Premium Partners
 
-### Objectif : Tester la maîtrise des fonctionnalités avancées de Laravel.
-- Créer un événement lors de la création d'un article/commentaire et envoyer un email à l'administrateur.
-- Créer un événement lors de la suppression d’un article/commentaire et envoyer un email à l’administrateur.
-- Créer un événement lorsqu’un utilisateur aime un article et envoyer un email à l’auteur de l’article.
-- Mettre en place une écoute pour envoyer un email adéquat à l’utilisateur quand un événement est déclenché.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-## Sujet Bonus 2 : Tests automatisés
+## Contributing
 
-### Objectif : Évaluer les compétences en TDD ou les tests unitaires.
-- Créer des tests unitaires pour valider la logique d’une API REST.
-- Les tests unitaires doivent de préférence être écrits avec Pest.
-- Proposer un test fonctionnel avec Laravel Dusk (ou autre framework de test type cypress) pour valider l’interface utilisateur du blog.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Rendu
-- Vous devrez fournir un lien vers un dépôt git (GitHub, GitLab, Bitbucket) contenant votre code.
-- Vous devrez fournir un fichier README.md expliquant comment installer et utiliser votre application.
-- Vous devrez fournir un fichier .env.example pour permettre de configurer l’application.
-- Vous devrez fournir des migrations pour la base de données.
-- Vous devrez fournir des seeds pour remplir la base de données avec des données de test.
-- Votre code doit être exempt de bugs et de vulnérabilités.
-- Les bonus ne sont pas obligatoires, mais ils seront appréciés.
-- L'utilisation de Docker est un plus.
+## Code of Conduct
 
-## Recommandations
-- Le répo actuel contient un projet Laravel de base. Vous pouvez le cloner pour commencer le test.
-- Vous pouvez utiliser des packages tiers pour faciliter la réalisation du test.
-- Vous pouvez utiliser des librairies front-end (Bootstrap, Tailwind, Vue.js, React, etc.) pour améliorer l’interface utilisateur.
-- Vous pouvez utiliser des outils de validation de code (Laravel Pint) pour améliorer la qualité de votre code.
-- Il est recommandé d'utiliser larastan (phpstan) pour vérifier la qualité de votre code.
-- Les commandes stan, pint, et pest sont disponibles dans le projet (composer scripts) pour vous aider à vérifier la qualité de votre code.
-- Gérez correctement les erreurs et les exceptions.
-- Respectez les conventions de nommage de Laravel.
-- Bien organiser vos branches et vos commits.
-- N’hésitez pas à ajouter des fonctionnalités supplémentaires si vous le souhaitez.
-- N’hésitez pas à poser des questions si vous avez des doutes sur les consignes.
-- Bon courage !
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
